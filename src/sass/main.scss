@@ -1,0 +1,22 @@
+body{
+	background: url('/img/main-bg.png') repeat;
+}
+.container{
+	background-color: #fff;
+}
+.app-title{
+	background-color: #53bf6b;
+	margin-bottom: 40px;
+	h1{
+		font-family: 'Lato';
+		text-align: center;
+		color: #fff;
+	}
+}
+.card{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+	@media (min-width: 600px){
+	    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+	}
+}
