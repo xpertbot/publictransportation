@@ -1,3 +1,8 @@
 import IndexController from './controllers/IndexController';
 
-new IndexController(document.getElementById('schedule'));
+var indexController = new IndexController(document.getElementById('schedule'));
+document.onreadystatechange = function(){
+	if(document.readyState == 'complete'){
+		setTimeout(indexController._getFeed, 600);
+	}
+};
